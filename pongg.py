@@ -1,0 +1,31 @@
+import turtle as t
+win=t.Screen()
+win.title("PONG GAME")
+win.bgcolor("black")
+win.setup(width=800,height=600)
+win.tracer(0)
+
+paddle_a=t.Turtle()
+paddle_a.speed(0)
+paddle_a.color("blue")
+paddle_a.shape("square")
+paddle_a.shapesize(stretch_wid=5,stretch_len=1)
+paddle_a.penup()
+paddle_a.goto(-350,0)
+
+paddle_b=t.Turtle()
+paddle_b.speed(0)
+paddle_b.color("blue")
+paddle_b.shape("square")
+paddle_b.shapesize(stretch_wid=5,stretch_len=1)
+paddle_b.penup()
+paddle_b.goto(350,0)
+
+ball=t.Turtle()
+ball.speed(5)
+ball.color("yellow")
+ball.shape("circle")
+ball.penup()
+ball.goto(0,0)
+while True:
+    win.update()
